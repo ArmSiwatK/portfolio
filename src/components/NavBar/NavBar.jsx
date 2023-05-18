@@ -8,11 +8,11 @@ const NavBar = () => {
         const handleResize = () => {
             const width = window.innerWidth;
             if (width >= 1100) {
-                setScreenSize('Siwat “Arm” Kanjanapanitkun');
+                setScreenSize('Siwat – | Arm | –     Kanjanapanitkun');
             } else if (width >= 576) {
                 setScreenSize('Siwat K. (Arm)');
             } else {
-                setScreenSize('Arm');
+                setScreenSize('Siwat K.');
             }
         };
 
