@@ -12,10 +12,10 @@ const Portfolio = () => {
                 repoLink="https://github.com/ArmSiwatK/Three-Character-Selection"
             />
             <PortfolioItem
-                title="Project 2"
-                gifSrc="/path/to/project2.gif"
-                appLink="https://example.com/project2"
-                repoLink="https://github.com/yourusername/project2"
+                title="Find Your Hat Challenge Project"
+                gifSrc="/images/demo2.gif"
+                appLink="https://replit.com/@SiwatArm/JavaScript-Find-My-Hat"
+                repoLink=""
             />
         </div>
     );
