@@ -50,7 +50,7 @@
 
 @media (max-width: 768px) {
     .portfolio {
-        margin: 0;
+        margin: 20% 0;
     }
 
     .portfolio-item {

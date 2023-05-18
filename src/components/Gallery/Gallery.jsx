@@ -7,6 +7,10 @@ const Gallery = () => {
         { imageSrc: '/images/logos/css3.png', name: 'CSS3' },
         { imageSrc: '/images/logos/javascript.png', name: 'JavaScript' },
         { imageSrc: '/images/logos/react.png', name: 'React' },
+        { imageSrc: '/images/logos/git.png', name: 'Git' },
+        { imageSrc: '/images/logos/node.png', name: 'Node' },
+        { imageSrc: '/images/logos/express.png', name: 'Express' },
+        { imageSrc: '/images/logos/mongodb.png', name: 'MongoDB' },
     ];
 
     const [hoveredLogo, setHoveredLogo] = useState(null);
