@@ -70,6 +70,10 @@
         justify-content: center;
     }
 
+    .footer-text {
+        font-size: 18px;
+    }
+
     .footer-social .footer-icon {
         margin: 24px;
         font-size: 50px;
