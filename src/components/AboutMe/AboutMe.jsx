@@ -5,7 +5,7 @@ const AboutMe = () => {
     return (
         <section className="about-section">
             <div className="about-text">
-                <h2>I'm Siwat K.</h2>
+                <h2>Call me Arm!</h2>
                 <p>
                     I am learning software development.
                     Being here means you're checking out my little portfolio!
