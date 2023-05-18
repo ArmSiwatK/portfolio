@@ -1,0 +1,13 @@
+#root {
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #444444, #adadad);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
