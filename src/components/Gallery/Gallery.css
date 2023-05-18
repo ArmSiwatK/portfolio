@@ -1,9 +1,10 @@
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
     background-color: #1a1a1a;
+    justify-content: center;
 }
 
 .logo-item {
@@ -11,6 +12,7 @@
     background-color: #808080;
     border-radius: 8px;
     overflow: hidden;
+    flex-basis: calc(100% / 10);
 }
 
 .logo-image {
@@ -62,7 +64,7 @@
 
 
 @media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
+    .logo-item {
+        flex-basis: calc(100% / 4);
     }
 }
