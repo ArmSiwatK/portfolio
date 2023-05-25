@@ -60,6 +60,13 @@
 
 
 
+@media (max-width: 1250px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
