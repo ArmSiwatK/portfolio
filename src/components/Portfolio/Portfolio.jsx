@@ -12,6 +12,12 @@ const Portfolio = () => {
                 repoLink="https://github.com/ArmSiwatK/Three-Character-Selection"
             />
             <PortfolioItem
+                title="Play Multiple YouTube Videos"
+                gifSrc="/images/demos/demo5.gif"
+                appLink="https://orangecat.vercel.app/"
+                repoLink="https://github.com/lethal1147/frontend-jsd4-groupE"
+            />
+            <PortfolioItem
                 title="Find Your Hat Challenge Project"
                 gifSrc="/images/demos/demo2.gif"
                 appLink="https://replit.com/@SiwatArm/JavaScript-Find-My-Hat"
