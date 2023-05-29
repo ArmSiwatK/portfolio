@@ -12,7 +12,7 @@ const Portfolio = () => {
                 repoLink="https://github.com/ArmSiwatK/Three-Character-Selection"
             />
             <PortfolioItem
-                title="Play Multiple YouTube Videos"
+                title="Orange Cat CRUD Web App"
                 gifSrc="/images/demos/demo5.gif"
                 appLink="https://orangecat.vercel.app/"
                 repoLink="https://github.com/lethal1147/frontend-jsd4-groupE"
