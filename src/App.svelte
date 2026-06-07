@@ -1,5 +1,4 @@
 <script>
-  import styles from './App.module.css';
   import NavBar from './components/NavBar/NavBar.svelte';
   import AboutMe from './components/AboutMe/AboutMe.svelte';
   import Gallery from './components/Gallery/Gallery.svelte';
@@ -7,10 +6,17 @@
   import Footer from './components/Footer/Footer.svelte';
 </script>
 
-<main class={styles.app}>
+<main class="app">
   <NavBar />
   <AboutMe />
   <Gallery />
   <Portfolio />
   <Footer />
 </main>
+
+<style>
+  .app {
+    min-height: 100vh;
+    text-align: center;
+  }
+</style>

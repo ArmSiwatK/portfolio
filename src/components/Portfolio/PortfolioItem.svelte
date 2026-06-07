@@ -1,6 +1,4 @@
 <script>
-  import styles from './Portfolio.module.css';
-
   let {
     title,
     gifSrc,
@@ -28,10 +26,10 @@
   });
 </script>
 
-<article class={styles.portfolioItem}>
-  <h3 class={styles.portfolioTitle}>{title}</h3>
-  <img src={gifSrc} alt={title} class={styles.portfolioGif} />
-  <div class={styles.portfolioButtons}>
+<article class="portfolio-item">
+  <h3 class="portfolio-title">{title}</h3>
+  <img src={gifSrc} alt={title} class="portfolio-gif" />
+  <div class="portfolio-buttons">
     {#if appLink}
       <button type="button" onclick={() => openLink(appLink)}>
         {isMobile ? 'View' : 'View Application'}
@@ -44,3 +42,47 @@
     {/if}
   </div>
 </article>
+
+<style>
+  .portfolio-item {
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+  }
+
+  .portfolio-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .portfolio-gif {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .portfolio-buttons button {
+    margin: 5% 5% 2%;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .portfolio-buttons button:hover {
+    color: #222;
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .portfolio-item {
+      border-radius: 0;
+    }
+  }
+</style>

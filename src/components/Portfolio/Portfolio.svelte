@@ -1,5 +1,4 @@
 <script>
-  import styles from './Portfolio.module.css';
   import PortfolioItem from './PortfolioItem.svelte';
 
   const projects = [
@@ -42,8 +41,25 @@
   ];
 </script>
 
-<section class={styles.portfolio}>
+<section class="portfolio">
   {#each projects as project (project.title)}
     <PortfolioItem {...project} />
   {/each}
 </section>
+
+<style>
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin: 5% 150px 0;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .portfolio {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      margin: 20% 0;
+    }
+  }
+</style>

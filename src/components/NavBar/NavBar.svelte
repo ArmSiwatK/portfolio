@@ -1,6 +1,4 @@
 <script>
-  import styles from './NavBar.module.css';
-
   let screenName = $state('Siwat K.');
 
   const updateScreenName = () => {
@@ -25,6 +23,24 @@
   });
 </script>
 
-<nav class={styles.nav}>
-  <div class={styles.logo}>{screenName}</div>
+<nav class="nav">
+  <div class="logo">{screenName}</div>
 </nav>
+
+<style>
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px;
+    color: #fff;
+    background-color: #222;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 700;
+    text-align: center;
+  }
+</style>
